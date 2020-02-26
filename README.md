@@ -1,2 +1,3 @@
-# jupiter_dynamo_gravity
-Calculate the zonal gravity harmonics associated with zonal flow in Jupiter's dynamo region
+# Contributions to Jupiter’s gravity field from dynamics in the dynamo region
+
+
