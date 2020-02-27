@@ -8,7 +8,7 @@
 ## 1 Overview 
 
 <p align="center">
-  <img src="figures/jupiter_flows.jpg" width="700">
+  <img src="figures/jupiter_flows.jpg" width="900">
     <br>
  <em> <font size = "4"> Zonal flows occur in Jupiter's deep atmosphere and dynamo region (i.e., where the magnetic
  field is <br> generated). These flows are associated with density perturbations that alter the planet's gravity field.</font> </em>  
@@ -53,7 +53,7 @@ where <img src="https://latex.codecogs.com/gif.latex?n" title="n" /> is the sphe
 
 ## 4 Results 
 
-We calculate the zonal gravity harmonics (J2-J10) for our physically motivated dynamo zonal flow profiles. The zonal flow profiles with RMS velocities of 10 cm/s for the simple polynomial and minimal Ohmic dissipation models are shown below. 
+We calculate the zonal gravity harmonics (J2-J10) for our physically motivated dynamo zonal flow profiles. The zonal flow profiles with RMS velocities of 10 cm/s for the simple polynomial and minimal Ohmic dissipation models are shown below. For each model, we allow Jupiter's core to be compact or dilute.
 
 <p align="center">
   <img src="figures/jns.png" width="900">
