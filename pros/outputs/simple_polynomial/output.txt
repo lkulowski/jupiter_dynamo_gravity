@@ -1,0 +1,5 @@
+p_form = ar2_br3 
+r_inner = 0.4 
+r_dynamo = 0.9 
+nr = 300 
+nt = 300 
