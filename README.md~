@@ -8,7 +8,7 @@
 ## 1 Overview 
 
 <p align="center">
-  <img src="figures/jupiter_flows.jpg" width="900">
+  <img src="figures/jupiter_flows.jpg" width="1200">
     <br>
  <em> <font size = "4"> Zonal flows occur in Jupiter's deep atmosphere and dynamo region (i.e., where the magnetic
  field is <br> generated). These flows are associated with density perturbations that alter the planet's gravity field.</font> </em>  
