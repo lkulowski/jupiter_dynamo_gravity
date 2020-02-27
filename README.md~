@@ -23,7 +23,16 @@ In this project, we calculate the gravity signal produced physically motivated d
   
 ## 2 Determining the zonal flow in the dynamo region 
 
-The first step in this project is to determine the zonal flow in the dynamo region. We simplify the dyamics so that the flow obeys Ferraro's law of isorotation (i.e., fluid parcels connected by the same magnetic field line rotate at the same angular rate). Given the internal magnetic field and the angular velocity at the dynamo surface, we can specify the zonal flow throughout the dynamo region by extending the angular velocity at the dynamo surface into the interior along the magnetic field lines. The two by specifying reasonable forms of the angular velocity at the dynamo surface
+The first step in this project is to determine the zonal flow in the dynamo region. We simplify the dyamics so that the flow obeys Ferraro's law of isorotation (i.e., fluid parcels connected by the same magnetic field line rotate at the same angular rate). Given the internal magnetic field and the angular velocity at the dynamo surface, we can specify the zonal flow throughout the dynamo region by extending the angular velocity at the dynamo surface into the interior along the magnetic field lines. 
+
+A prior, we do not know the structure of Jupiter's internal magnetic field or the angular velocity at the dynamo surface. We therefore assume that they have simple forms. We consider two different models for the internal magnetic field: a simple polynomial model (i.e., the spectral poloidal scalar is has a polynomial form) and a minimal Ohmic dissipation model (i.e., where the magnetic field has a configuration that minimizes Ohmic dissipation). At the dynamo surface, we assume that the zonal flow is proportional to the zonally averaged, theta-component of Jupiter's magnetic field. We allow for some small adjustments to this flow so that we can satisfy Ferraro's law. We extend the angular velocity associated with the zonal flow at the dynamo surface into the interior along magnetic field lines to the dynamo zonal flow profile. The application of Ferraro's law for the two different magnetic field models are shown below.
+
+<p align="center">
+  <img src="figures/ferraro.jpg" width="800">
+    <br>
+</p>
+
+The constructed dynamo zonal flow profiles have RMS velocities of 10 cm/s. 
 
 ## 3 Gravity calculation
 
@@ -40,7 +49,7 @@ Having obtained the density perturbation, we can now calculate the gravity signa
 <img src="https://latex.codecogs.com/gif.latex?\Delta&space;J_{n}&space;=&space;-&space;\frac{1}{Ma^{n}}&space;\int_{V}\rho'r^{n}P_{n}(\cos\theta)dV" title="\Delta J_{n} = - \frac{1}{Ma^{n}} \int_{V}\rho'r^{n}P_{n}(\cos\theta)dV" />
 </p>
 
-where 
+where <img src="https://latex.codecogs.com/gif.latex?n" title="n" /> is the spherical harmonic degree, <img src="https://latex.codecogs.com/gif.latex?M" title="M" /> is Jupiter's mass, <img src="https://latex.codecogs.com/gif.latex?a" title="a" /> is the equatorial radius, <img src="https://latex.codecogs.com/gif.latex?r" title="r" /> is the radial position, <img src="https://latex.codecogs.com/gif.latex?P_{n}(\cos\theta)" title="P_{n}(\cos\theta)" /> is the Legendre polynomial of degree <img src="https://latex.codecogs.com/gif.latex?n" title="n" />, and <img src="https://latex.codecogs.com/gif.latex?V" title="V" /> is Jupiter's volume.
 
 ## 4 Results 
 
