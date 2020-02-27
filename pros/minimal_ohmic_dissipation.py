@@ -21,12 +21,12 @@ formatting.plt_mode(p_mode = 'paper')
 
 #------------------------------------------------------------------------------------------------------
 # create directories to save data/plots
-save_folder = f'outputs/simple_polynomial/'
+save_folder = f'outputs/minimal_ohmic_dissipation/'
 formatting.setup_directory(save_folder)
 
 #------------------------------------------------------------------------------------------------------
 # choose poloidal field form
-p_form = 'ar2_br3'  
+p_form = 'ohmic'  
 
 # create grid
 nr = 300

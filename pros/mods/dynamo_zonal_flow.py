@@ -469,21 +469,10 @@ class Dynamo_Zonal_Flow():
                 
         # set u ~ B_comp
         B_surf_ns = self.B_component_spec_trans()
-
-        if self.B_comp == 'Bt':
-            B_surf = np.polynomial.legendre.legval(np.cos(self.theta), B_surf_ns) * np.sin(self.theta)
-            u_surf = -B_surf
-            omega_surf = u_surf / ( self.r_dynamo * np.sin(self.theta))    
-        
-        if self.B_comp == 'Bt':
-            B_label = r'$B_{\theta}$'
-        if (self.B_comp == 'Bt') & (self.ND == True):
-            B_label = r'$B_{\theta}^{ND}$'
-
-        if self.B_comp == 'Br':
-            B_label = r'$B_{r}$'
-        if (self.B_comp == 'Br') & (self.ND == True):
-            B_label = r'$B_{r}^{ND}$'
+        B_surf = np.polynomial.legendre.legval(np.cos(self.theta), B_surf_ns) * np.sin(self.theta)
+        u_surf = -B_surf
+        omega_surf = u_surf / ( self.r_dynamo * np.sin(self.theta))    
+        B_label = r'$B_{\theta}^{ND}$'
 
         plt.figure(figsize = (7, 8))
         matplotlib.rcParams.update({'font.size': 15})
@@ -526,16 +515,13 @@ class Dynamo_Zonal_Flow():
 
         # smooth interior flow
         n_cheby_opt, m_leg_opt = self.optimize_smooth_omega_phi(omega_phi_jag, omega_surf)
-        print(f'cheby = {n_cheby_opt}, leg = {m_leg_opt}')
         omega_phi = self.smooth_omega_phi_spec(omega_phi_jag, n_cheby = n_cheby_opt, m_leg = m_leg_opt)
 
-        #omega_phi = self.smooth_omega_phi_spec(omega_phi_jag, n_cheby = 7, m_leg = 9)    # 14, 9
         plotting.Plot_Half_Donut(omega_phi, self.grid).plot_half_donut(ttl = '$\omega_{\phi}$ (smoothed)',
                                                                        cb_orientation = 'vertical', fsize = 20)
         plt.savefig(f'{self.save_folder}/plots/u_phi_construct/omega_phi_smoothed')
         plt.close()
 
-        
         # u_phi
         rcs_mesh, theta_mesh = np.meshgrid(self.rcs, self.theta)
         u_phi = omega_phi * rcs_mesh * np.sin(theta_mesh)
