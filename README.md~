@@ -28,7 +28,10 @@ The first step in this project is to determine the zonal flow in the dynamo regi
 ## 3 Gravity calculation
 
 There are two steps to calculate the gravity signal produced by a zonal flow profile. First, we calculate the density perturbation associated with the zonal flow using the vorticity equation, which is given by 
+<p align="center">
 <img src="https://latex.codecogs.com/gif.latex?2(\boldsymbol{\Omega}&space;\cdot&space;\nabla)(\rho_{0}&space;\boldsymbol{u})&space;=&space;-&space;\nabla&space;\rho&space;'&space;\times&space;\boldsymbol{g_{\rm{eff}_{0}}}" title="2(\boldsymbol{\Omega} \cdot \nabla)(\rho_{0} \boldsymbol{u}) = - \nabla \rho ' \times \boldsymbol{g_{\rm{eff}_{0}}}" />
+</p>
+
 where <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Omega}" title="\boldsymbol{\Omega}" /> is the planet's rotational angular velocity, <img src="https://latex.codecogs.com/gif.latex?\rho_{0}" title="\rho_{0}" /> is the hydrostatic background density, <img src="https://latex.codecogs.com/gif.latex?\rho'" title="\rho'" /> is the density perturbation arising from the flow, and <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{g_{\rm{eff}_{0}}}" title="\boldsymbol{g_{\rm{eff}_{0}}}" /> is the backgound effective gravity. Given a zonal flow profile, we can integrate vorticity equation to obtain the density perturbation.
 
 Having obtained the density perturbation, we can now calculate the gravity signal associated with it. We compute the gravity signal in spectral space, so that the gravity field is represented by zonal gravity harmonics. The zonal gravity harmonics are obtained by integrating the density perturbation over the Jupiter's volume and are given by 
