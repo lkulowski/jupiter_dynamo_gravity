@@ -7,7 +7,6 @@ associated with a zonal wind profile
 
 '''
 
-# SciPy imports 
 import numpy as np
 from scipy import interpolate
 from scipy.integrate import simps
@@ -194,45 +193,17 @@ class Gravity_Calc():
 
         return rho_prime
 
-#LAURA 
-
-    def twe_LHS(self):
-
-        # get background state
-        rho0, drho0_dr, rho0_matrix, g_eff = self.background_state()
-
-        # spectral transformation of u_phi
-        u_phi_n = self.field_phys2spec(self.u_phi)
-
-        # initialize matrix for LHS 
-        lhs_integrand = np.zeros([self.nt, self.nr + 1])
-
-        for tt in range(self.nt):
-
-            S1 = np.zeros(self.nr + 1)
-            S2 = np.zeros(self.nr + 1) 
-
-            for nn in range(self.leg_deg + 1):
-                S1_n =  (1./self.L) * (np.dot(self.Dm, u_phi_n[nn, :]))* self.p[nn, tt]
-                S2_n = u_phi_n[nn, :] * self.dp_dtheta[nn, tt] 
-
-                S1 = S1 + S1_n
-                S2 = S2 + S2_n            
-
-            # only for run for, or do analytical result
-            lhs_integrand[tt, :] = 2. * self.Omega0 * (  np.cos(self.theta[tt]) * drho0_dr * self.u_phi[tt, :] + np.cos(self.theta[tt]) * rho0 * S1  - np.sin(self.theta[tt]) / (self.L * self.rcs) * rho0 * S2  )
-
-        return lhs_integrand
-    
     def calc_Jns(self, rho_prime, Jn_max_deg = 15):
         
         '''
         calculate zonal gravity harmonics
-        : param rho_prime:    numpy array containing the density perturbation associated
-        :                     with the zonal wind profile; shape (nt, nr + 1)
-        : param Jn_max_deg:   maximum degree zonal gravity harmonic to calculate
-        : return J_ns:        numpy array containing the zonal gravity harmonics from degree 0
-        :                     to Jn_max_deg; shape (1, Jn_max_deg + 1)
+        : param rho_prime:            numpy array containing the density perturbation associated
+        :                             with the zonal wind profile; shape (nt, nr + 1)
+        : param Jn_max_deg:           maximum degree zonal gravity harmonic to calculate
+        : return J_ns, J_ns_equ:      numpy array containing the zonal gravity harmonics from degree 0
+        :                             to Jn_max_deg; shape (1, Jn_max_deg + 1);
+        :                             J_ns are normalized to the volumetric radius, J_ns_equ are normalized
+        :                             to the equatorial radius
         '''
 
         # degrees for which we will calculate Jn

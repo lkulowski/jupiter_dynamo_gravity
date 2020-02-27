@@ -10,6 +10,12 @@ import sys
 #---------------------------------------------------------------------------------------------------------------------
 class Internal_Poloidal_Field():
     def __init__(self, r_dynamo, p_form = 'ar2_br3'):
+
+        '''
+        : param r_dynamo:    nondimensional radius of the dynamo surface
+        : param p_form:      form of the poloidal magnetic field;
+        :                    options: 'ar2_br3' for simple polynomial or 'ohmic' for minimal ohmic
+        '''
         
         self.r_dynamo = r_dynamo                           
         self.a = 71492. * 10.**3                                       # Jupiter's equatorial radius (m) 
@@ -22,6 +28,8 @@ class Internal_Poloidal_Field():
 
                 
     def calc_alpha_beta_n(self):
+
+        ''' calculate alpha_n and beta_n coefficients for spectral poloidal scalar '''
 
         # initialize solution matrix
         soln = np.zeros([10, 2])
@@ -36,8 +44,6 @@ class Internal_Poloidal_Field():
                 
                 
             if self.p_form == 'ohmic': 
-                #A = np.array([[n * (2 * n + 3.) * self.r_dynamo_phys**(n - 1), - n * (2 * n + 1.) * self.r_dynamo_phys**(n + 1)],
-                #              [n * (2 * n + 3.) * (n - 1) * self.r_dynamo_phys**(n - 2), - n * (2 * n + 1.) * (n + 1) * self.r_dynamo_phys**n]])
                 A = np.array([[n * (2 * n + 3.) * self.r_dynamo**(n - 1) * self.L**-1, - n * (2 * n + 1.) * self.r_dynamo**(n + 1) * self.L],
                               [n * (2 * n + 3.) * (n - 1) * self.r_dynamo**(n - 2) * self.L**-2, - n * (2 * n + 1.) * (n + 1) * self.r_dynamo**n]])
 
@@ -52,13 +58,17 @@ class Internal_Poloidal_Field():
 
             soln[n - 1, :] = x.reshape(-1)
 
-
-        # help: not sure about this 
-        #soln[abs(soln) < 10.**-20] = 0.
-
         return soln
 
     def S_n(self, n, alpha_beta_n, rcs_phys):
+        
+        '''
+        calculate spectral poloidal scalar
+        : param n:               spherical harmonic degree 
+        : param alpha_beta_n:    alpha_n and beta_n coefficients for degree n
+        : param rcs_phys:        dynamo radius in physical units
+        '''
+        
         if self.p_form == 'ar2_br3':
             s_n = alpha_beta_n[0] * rcs_phys**2 + alpha_beta_n[1] * rcs_phys**3
             
@@ -68,6 +78,14 @@ class Internal_Poloidal_Field():
         return s_n
     
     def poloidal_streams(self, alpha_beta, grid):
+        
+        '''
+        calculate streamlines for poloidal magnetic field
+        : param alpha_beta:     alpha_n and beta_n coefficients for spectral poloidal scalar 
+        : param grid:           grid object
+
+        '''
+        
         dP_dz, dP_dtheta = grid.leg_P_deriv()
         rcs = grid.cheby_shift()
         rcs_phys = rcs * self.a
@@ -82,6 +100,9 @@ class Internal_Poloidal_Field():
         return B_p_sum
 
     def check_boundary_condition(self, alpha_beta, grid):
+
+        ''' check that boundary conditions at dynamo surface are satisfed '''
+        
         matplotlib.rcParams.update({'font.size': 15})
 
         p = grid.leg_P()
@@ -135,8 +156,6 @@ class Internal_Poloidal_Field():
         ax[1].set_title(r'$\partial B_{r} / \partial r$')
 
         plt.tight_layout()
-
-
         
         return 
         
