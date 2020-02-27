@@ -34,9 +34,13 @@ There are two steps to calculate the gravity signal produced by a zonal flow pro
 
 where <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Omega}" title="\boldsymbol{\Omega}" /> is the planet's rotational angular velocity, <img src="https://latex.codecogs.com/gif.latex?\rho_{0}" title="\rho_{0}" /> is the hydrostatic background density, <img src="https://latex.codecogs.com/gif.latex?\rho'" title="\rho'" /> is the density perturbation arising from the flow, and <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{g_{\rm{eff}_{0}}}" title="\boldsymbol{g_{\rm{eff}_{0}}}" /> is the backgound effective gravity. Given a zonal flow profile, we can integrate vorticity equation to obtain the density perturbation.
 
-Having obtained the density perturbation, we can now calculate the gravity signal associated with it. We compute the gravity signal in spectral space, so that the gravity field is represented by zonal gravity harmonics. The zonal gravity harmonics are obtained by integrating the density perturbation over the Jupiter's volume and are given by 
+Having obtained the density perturbation, we can now calculate the gravity signal associated with it. We compute the gravity signal in spectral space, so that the gravity field is represented by zonal gravity harmonics. The zonal gravity harmonics are given by 
 
-The detailed derivation is given in Kulowski et al. (2018) (<em> submitted </em>).
+<p align="center">
+<img src="https://latex.codecogs.com/gif.latex?\Delta&space;J_{n}&space;=&space;-&space;\frac{1}{Ma^{n}}&space;\int_{V}\rho'r^{n}P_{n}(\cos\theta)dV" title="\Delta J_{n} = - \frac{1}{Ma^{n}} \int_{V}\rho'r^{n}P_{n}(\cos\theta)dV" />
+</p>
+
+where 
 
 ## 4 Results 
 
