@@ -1,3 +1,5 @@
+# Author: Laura Kulowski
+
 '''
 
 Create a r-theta grid, using Chebyshev points for r and Gauss-Legendre points for theta.
@@ -8,10 +10,6 @@ and taking derivatives on the theta-grid.
 
 '''
 
-# Author: Laura Kulowski
-# Last updated: Nov 2019 
-
-# SciPy imports 
 import numpy as np
 
 class Grid():
