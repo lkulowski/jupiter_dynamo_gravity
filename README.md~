@@ -46,10 +46,10 @@ We use Ferraro's law to extend the angular velocity associated with the zonal fl
 
 There are two steps to calculate the gravity signal produced by a zonal flow profile. First, we calculate the density perturbation associated with the zonal flow using the vorticity equation, which is given by 
 <p align="center">
-<img src="https://latex.codecogs.com/gif.latex?2(\boldsymbol{\Omega}&space;\cdot&space;\nabla)(\rho_{0}&space;\boldsymbol{u})&space;=&space;-&space;\nabla&space;\rho&space;'&space;\times&space;\boldsymbol{g_{\rm{eff}_{0}}}" title="2(\boldsymbol{\Omega} \cdot \nabla)(\rho_{0} \boldsymbol{u}) = - \nabla \rho ' \times \boldsymbol{g_{\rm{eff}_{0}}}" />
+<img src="https://latex.codecogs.com/gif.latex?2(\boldsymbol{\Omega}&space;\cdot&space;\nabla)(\rho_{0}&space;\boldsymbol{u})&space;=&space;-&space;\nabla&space;\rho&space;'&space;\times&space;\boldsymbol{g_{\rm{eff}_{0}}}" title="2(\boldsymbol{\Omega} \cdot \nabla)(\rho_{0} \boldsymbol{u}) = - \nabla \rho ' \times \boldsymbol{g_{\rm{eff}_{0}}}" />.
 </p>
 
-where <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Omega}" title="\boldsymbol{\Omega}" /> is the planet's rotational angular velocity, <img src="https://latex.codecogs.com/gif.latex?\rho_{0}" title="\rho_{0}" /> is the hydrostatic background density, <img src="https://latex.codecogs.com/gif.latex?\rho'" title="\rho'" /> is the density perturbation arising from the flow, and <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{g_{\rm{eff}_{0}}}" title="\boldsymbol{g_{\rm{eff}_{0}}}" /> is the backgound effective gravity. Given a zonal flow profile, we integrate vorticity equation to obtain the density perturbation.
+In the above equation, <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Omega}" title="\boldsymbol{\Omega}" /> is the planet's rotational angular velocity, <img src="https://latex.codecogs.com/gif.latex?\rho_{0}" title="\rho_{0}" /> is the hydrostatic background density, <img src="https://latex.codecogs.com/gif.latex?\rho'" title="\rho'" /> is the density perturbation arising from the flow, and <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{g_{\rm{eff}_{0}}}" title="\boldsymbol{g_{\rm{eff}_{0}}}" /> is the backgound effective gravity. Given a zonal flow profile, we integrate vorticity equation to obtain the density perturbation.
 
 Having obtained the density perturbation, we can now calculate the gravity signal associated with it. We compute the gravity signal in spectral space, so that the gravity field is represented by zonal gravity harmonics. The zonal gravity harmonics are given by 
 
@@ -68,6 +68,8 @@ We calculate the zonal gravity harmonics (J2-J10) for our physically motivated d
 </p>
 
 These results can be produced by the files `simple_polynomial.py` and `minimal_ohmic_dissipation.py`. For all cases, the dynamo zonal flow would produce J3 values on the same order of magnitude as the Juno inferred value and J2 and J4 values on the same order as 3000 km deep atmospheric zonal flow, but would not contribute much to higher order gravity harmonics.
+
+These results show that the dynamo region makes an important contribution to Jupiter's gravity field. While atmospheric zonal flows are capable of produce gravity harmonics that are consistent with the Juno measurements, it is not necessary for these flows to fully match the measured gravity harmonics. Some of the contribution can come from the dynamo region instead of the atmosphere. 
 
 ## References 
 
