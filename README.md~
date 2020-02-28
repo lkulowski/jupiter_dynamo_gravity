@@ -23,9 +23,13 @@ In this project, we calculate the gravity signal produced physically motivated d
   
 ## 2 Determining the zonal flow in the dynamo region 
 
-The first step in this project is to determine the zonal flow in the dynamo region. Determining the dynamo zonal flow is a difficult and underdetermined inverse problem. We simplify the dyamics so that the flow obeys Ferraro's law of isorotation (i.e., fluid parcels connected by the same magnetic field line rotate at the same angular rate). Given the internal magnetic field and the angular velocity at the dynamo surface, we can specify the zonal flow throughout the dynamo region by extending the angular velocity at the dynamo surface into the interior along the magnetic field lines. 
+The first step in this project is to determine the zonal flow in the dynamo region. This is a difficult and underdetermined inverse problem. Instead of addressing the inverse problem, we prefer to develop a physical model of Jovian dynamo zonal flow. We simplify the dyamics so that the flow obeys Ferraro's law of isorotation so that is, fluid parcels connected by the same magnetic field line rotate at the same angular rate. 
 
-A prior, we do not know the structure of Jupiter's internal magnetic field or the angular velocity at the dynamo surface. We therefore assume that they have simple forms. We consider two different models for the internal magnetic field: a simple polynomial model (i.e., the spectral poloidal scalar is has a polynomial form) and a minimal Ohmic dissipation model (i.e., where the magnetic field has a configuration that minimizes Ohmic dissipation). At the dynamo surface, we assume that the zonal flow is proportional to the zonally averaged, theta-component of Jupiter's magnetic field. We allow for some small adjustments to this flow so that we can satisfy Ferraro's law. We extend the angular velocity associated with the zonal flow at the dynamo surface into the interior along magnetic field lines to the dynamo zonal flow profile. The constructed zonal flow profiles for each magnetic field model are shown below. 
+
+To use Ferraro’s law, we need to know the magnetic field lines in the dynamo region and the angular velocity at the dynamo surface. We assume two forms for the magnetic field. First, we consider a magnetic field where the spectral poloidal scalar has a polynomial form. Second, we consider a magnetic field that minimizes Ohmic dissiation. At the dynamo surface, we assume that the zonal flow is proportional to the zonally averaged, non-dipolar theta-component of Jupiter's magnetic field. We allow for some small adjustments to this flow so that we can satisfy Ferraro's law. 
+
+The plots below show how to construct dynamo zonal flow profiles using Ferraro's law. We extend the angular velocity associated with the zonal flow at the dynamo surface (red and blue curves in (b, e)) into the interior along magnetic field lines (a, d) to obtain resulting dynamo zonal flow profiles (c, f). 
+
 <p align="center">
   <img src="figures/ferraro.jpg" width="800">
     <br>
