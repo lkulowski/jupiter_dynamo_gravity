@@ -64,7 +64,7 @@ where <img src="https://latex.codecogs.com/gif.latex?n" title="n" /> is the sphe
 We calculate the zonal gravity harmonics (J2-J10) for our physically motivated dynamo zonal flow profiles. The zonal flow profiles with RMS velocities of 10 cm/s for the simple polynomial and minimal Ohmic dissipation magnetic field models are shown below. For each model, we allow Jupiter's core to be compact or dilute.
 
 <p align="center">
-  <img src="figures/jns.png" width="900">
+  <img src="figures/jns.jpg" width="900">
 </p>
 
 These results can be produced by the files `simple_polynomial.py` and `minimal_ohmic_dissipation.py`. For all cases, the dynamo zonal flow would produce J3 values on the same order of magnitude as the Juno inferred value and J2 and J4 values on the same order as 3000 km deep atmospheric zonal flow, but would not contribute much to higher order gravity harmonics.
