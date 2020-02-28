@@ -3,7 +3,7 @@
 ## Requirements 
 - `Python 3+` 
 - `NumPy`
-- 'SciPy'
+- `SciPy`
 
 ## 1 Overview 
 
