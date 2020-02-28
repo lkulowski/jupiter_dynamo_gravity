@@ -19,11 +19,11 @@ Zonal (east-west) flows occur throughout Jupiter's interior. Near the "surface" 
 
 Recently, the Juno spacecraft at Jupiter has measured the planet's gravity field with high precision. Using the Juno measurements, we can study the gravitational contributions from atmospheric and dynamo zonal flows. Atmospheric flows extending about 3,000 km deep can explain most of the structure of the observed gravity field that arises from the dynamics (Kaspi et al., 2018; Kong et al., 2018; Guillot et al., 2018). The gravity contribution from dynamo zonal flows, however, has not yet been investigated. Although these flows are slow, they occupy most of the volume of the planet and resides in a region with a large background density. The slow motion of a large volume of dense fluid has the potential to produce a large gravity signal. 
 
-In this project, we calculate the gravity signal produced physically motivated dynamo zonal flow profiles. We begin by constructing zonal flow profiles for the dynamo region in [Section 2](#2-determining-the-zonal-flow-in-the-dynamo-region). We then develop the mathematical framework to calculate the density perturbation and gravity signal associated with the zonal flow in [Section 3](#3-gravity-calculation). Then, we calculate the gravity signal for a few example flows in [Section 4](#4-Results). A more detailed discussion of the methods and results be found in Kulowski et al. (2020) (in review). 
+In this project, we calculate the gravity signal produced physically motivated dynamo zonal flow profiles. We begin by constructing zonal flow profiles for the dynamo region in [Section 2](#2-determining-the-zonal-flow-in-the-dynamo-region). We then develop the mathematical framework to calculate the density perturbation and gravity signal associated with the zonal flow in [Section 3](#3-gravity-calculation). We calculate the gravity signal for a few example flows in [Section 4](#4-Results). A more detailed discussion of the methods and results be found in Kulowski et al. (2020) (submitted). 
   
 ## 2 Determining the zonal flow in the dynamo region 
 
-The first step in this project is to determine the zonal flow in the dynamo region. This is a difficult and underdetermined inverse problem. Instead of addressing the inverse problem, we prefer to develop a physical model of Jovian dynamo zonal flow. We simplify the dyamics so that the flow obeys Ferraro's law of isorotation. This law requires fluid parcels connected by the same magnetic field line to rotate at the same angular rate. 
+The first step in this project is to determine the zonal flow in the dynamo region. This is a difficult and underdetermined inverse problem. Instead of addressing the inverse problem, we prefer to develop a physical model of Jovian dynamo zonal flow. We simplify the dyamics so that the flow obeys Ferraro's law of isorotation. This law requires fluid parcels connected by the same magnetic field line to rotate at the same angular rate. Ferraro's law serves as a starting point for inferring possible Jovian dynamo zonal flow profiles. 
 
 To use Ferraro’s law, we need to know the magnetic field lines in the dynamo region and the angular velocity at the dynamo surface. We assume two forms for the magnetic field. First, we consider a magnetic field where the spectral poloidal scalar has a polynomial form. Second, we consider a magnetic field that minimizes Ohmic dissiation. The two magnetic fields are shown below. 
 <p align="center">
@@ -36,7 +36,7 @@ At the dynamo surface, we assume that the zonal flow is proportional to the zona
   <img src="figures/surface_flow.jpg" width="800">
     <br>
 </p>
-We use Ferraro's law to extend the angular velocity associated with the zonal flow at the dynamo surface red and blue curves into the interior along the magnetic field lines. The dynamo zonal flow profiles shown for the simple polynomial and minimal Ohmic dissipation models. Each profile has a RMS velocity of 10 cm/s. 
+We use Ferraro's law to extend the angular velocity associated with the zonal flow at the dynamo surface (red and blue curves) into the interior along the magnetic field lines. The dynamo zonal flow profiles shown for the simple polynomial and minimal Ohmic dissipation models. Each profile has a RMS velocity of 10 cm/s. 
 <p align="center">
   <img src="figures/zonal_flow_profiles.jpg" width="800">
     <br>

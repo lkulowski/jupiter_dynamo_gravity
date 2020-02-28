@@ -19,7 +19,7 @@ Zonal (east-west) flows occur throughout Jupiter's interior. Near the "surface" 
 
 Recently, the Juno spacecraft at Jupiter has measured the planet's gravity field with high precision. Using the Juno measurements, we can study the gravitational contributions from atmospheric and dynamo zonal flows. Atmospheric flows extending about 3,000 km deep can explain most of the structure of the observed gravity field that arises from the dynamics (Kaspi et al., 2018; Kong et al., 2018; Guillot et al., 2018). The gravity contribution from dynamo zonal flows, however, has not yet been investigated. Although these flows are slow, they occupy most of the volume of the planet and resides in a region with a large background density. The slow motion of a large volume of dense fluid has the potential to produce a large gravity signal. 
 
-In this project, we calculate the gravity signal produced physically motivated dynamo zonal flow profiles. We begin by constructing zonal flow profiles for the dynamo region in [Section 2](#2-determining-the-zonal-flow-in-the-dynamo-region). We then develop the mathematical framework to calculate the density perturbation and gravity signal associated with the zonal flow in [Section 3](#3-gravity-calculation). Then, we calculate the gravity signal for a few example flows in [Section 4](#4-Results). A more detailed discussion of the methods and results be found in Kulowski et al. (2020) (in review). 
+In this project, we calculate the gravity signal produced physically motivated dynamo zonal flow profiles. We begin by constructing zonal flow profiles for the dynamo region in [Section 2](#2-determining-the-zonal-flow-in-the-dynamo-region). We then develop the mathematical framework to calculate the density perturbation and gravity signal associated with the zonal flow in [Section 3](#3-gravity-calculation). We calculate the gravity signal for a few example flows in [Section 4](#4-Results). A more detailed discussion of the methods and results be found in Kulowski et al. (2020) (submitted). 
   
 ## 2 Determining the zonal flow in the dynamo region 
 
@@ -36,7 +36,7 @@ At the dynamo surface, we assume that the zonal flow is proportional to the zona
   <img src="figures/surface_flow.jpg" width="800">
     <br>
 </p>
-We use Ferraro's law to extend the angular velocity associated with the zonal flow at the dynamo surface red and blue curves into the interior along the magnetic field lines. The dynamo zonal flow profiles shown for the simple polynomial and minimal Ohmic dissipation models. Each profile has a RMS velocity of 10 cm/s. 
+We use Ferraro's law to extend the angular velocity associated with the zonal flow at the dynamo surface (red and blue curves) into the interior along the magnetic field lines. The dynamo zonal flow profiles shown for the simple polynomial and minimal Ohmic dissipation models. Each profile has a RMS velocity of 10 cm/s. 
 <p align="center">
   <img src="figures/zonal_flow_profiles.jpg" width="800">
     <br>
@@ -46,10 +46,10 @@ We use Ferraro's law to extend the angular velocity associated with the zonal fl
 
 There are two steps to calculate the gravity signal produced by a zonal flow profile. First, we calculate the density perturbation associated with the zonal flow using the vorticity equation, which is given by 
 <p align="center">
-<img src="https://latex.codecogs.com/gif.latex?2(\boldsymbol{\Omega}&space;\cdot&space;\nabla)(\rho_{0}&space;\boldsymbol{u})&space;=&space;-&space;\nabla&space;\rho&space;'&space;\times&space;\boldsymbol{g_{\rm{eff}_{0}}}" title="2(\boldsymbol{\Omega} \cdot \nabla)(\rho_{0} \boldsymbol{u}) = - \nabla \rho ' \times \boldsymbol{g_{\rm{eff}_{0}}}" />
+<img src="https://latex.codecogs.com/gif.latex?2(\boldsymbol{\Omega}&space;\cdot&space;\nabla)(\rho_{0}&space;\boldsymbol{u})&space;=&space;-&space;\nabla&space;\rho&space;'&space;\times&space;\boldsymbol{g_{\rm{eff}_{0}}}" title="2(\boldsymbol{\Omega} \cdot \nabla)(\rho_{0} \boldsymbol{u}) = - \nabla \rho ' \times \boldsymbol{g_{\rm{eff}_{0}}}" />.
 </p>
 
-where <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Omega}" title="\boldsymbol{\Omega}" /> is the planet's rotational angular velocity, <img src="https://latex.codecogs.com/gif.latex?\rho_{0}" title="\rho_{0}" /> is the hydrostatic background density, <img src="https://latex.codecogs.com/gif.latex?\rho'" title="\rho'" /> is the density perturbation arising from the flow, and <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{g_{\rm{eff}_{0}}}" title="\boldsymbol{g_{\rm{eff}_{0}}}" /> is the backgound effective gravity. Given a zonal flow profile, we integrate vorticity equation to obtain the density perturbation.
+In the above equation, <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Omega}" title="\boldsymbol{\Omega}" /> is the planet's rotational angular velocity, <img src="https://latex.codecogs.com/gif.latex?\rho_{0}" title="\rho_{0}" /> is the hydrostatic background density, <img src="https://latex.codecogs.com/gif.latex?\rho'" title="\rho'" /> is the density perturbation arising from the flow, and <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{g_{\rm{eff}_{0}}}" title="\boldsymbol{g_{\rm{eff}_{0}}}" /> is the backgound effective gravity. Given a zonal flow profile, we integrate vorticity equation to obtain the density perturbation.
 
 Having obtained the density perturbation, we can now calculate the gravity signal associated with it. We compute the gravity signal in spectral space, so that the gravity field is represented by zonal gravity harmonics. The zonal gravity harmonics are given by 
 
