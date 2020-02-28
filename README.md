@@ -23,8 +23,7 @@ In this project, we calculate the gravity signal produced physically motivated d
   
 ## 2 Determining the zonal flow in the dynamo region 
 
-The first step in this project is to determine the zonal flow in the dynamo region. This is a difficult and underdetermined inverse problem. Instead of addressing the inverse problem, we prefer to develop a physical model of Jovian dynamo zonal flow. We simplify the dyamics so that the flow obeys Ferraro's law of isorotation so that is, fluid parcels connected by the same magnetic field line rotate at the same angular rate. 
-
+The first step in this project is to determine the zonal flow in the dynamo region. This is a difficult and underdetermined inverse problem. Instead of addressing the inverse problem, we prefer to develop a physical model of Jovian dynamo zonal flow. We simplify the dyamics so that the flow obeys Ferraro's law of isorotation. This law requires fluid parcels connected by the same magnetic field line to rotate at the same angular rate. Ferraro's law serves as a starting point for inferring possible Jovian dynamo zonal flow profiles. 
 
 To use Ferraro’s law, we need to know the magnetic field lines in the dynamo region and the angular velocity at the dynamo surface. We assume two forms for the magnetic field. First, we consider a magnetic field where the spectral poloidal scalar has a polynomial form. Second, we consider a magnetic field that minimizes Ohmic dissiation. The two magnetic fields are shown below. 
 <p align="center">
