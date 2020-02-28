@@ -17,7 +17,7 @@
 
 Zonal (east-west) flows occur throughout Jupiter's interior. Near the "surface" of the planet, we observe alternating east-west jets with peak speeds of ~100 m/s. The surface winds may extend thousands of kilometers deep into the planet, or be confined to a thin weather layer on top of weaker convective flows. Deeper down, in the dynamo region where the magnetic field is generated, there are slow zonal flows with speeds on the order of 0.1-20 cm/s. The zonal flows within the deep atmosphere and dynamo region are associated with high and low pressures, and thus with density perturbations relative to the mean background density. The density perturbations induced by zonal flows alter Jupiter's gravity field.
 
-Recently, the Juno spacecraft at Jupiter has measured the planet's gravity field with high precision. Using the Juno measurements, we can study the gravitational contributions from atmospheric and dynamo zonal flows. Atmospheric flows extending about 3,000 km deep can explain most of the structure of the observed gravity field that arises from the dynamics. The gravity contribution from dynamo zonal flows, however, has not yet been investigated. Although these flows are slow, they occupy most of the volume of the planet and resides in a region with a large background density. The slow motion of a large volume of dense fluid has the potential to produce a large gravity signal. 
+Recently, the Juno spacecraft at Jupiter has measured the planet's gravity field with high precision. Using the Juno measurements, we can study the gravitational contributions from atmospheric and dynamo zonal flows. Atmospheric flows extending about 3,000 km deep can explain most of the structure of the observed gravity field that arises from the dynamics (Kaspi et al., 2018; Kong et al., 2018; Guillot et al., 2018). The gravity contribution from dynamo zonal flows, however, has not yet been investigated. Although these flows are slow, they occupy most of the volume of the planet and resides in a region with a large background density. The slow motion of a large volume of dense fluid has the potential to produce a large gravity signal. 
 
 In this project, we calculate the gravity signal produced physically motivated dynamo zonal flow profiles. We begin by constructing zonal flow profiles for the dynamo region in [Section 2](#2-determining-the-zonal-flow-in-the-dynamo-region). We then develop the mathematical framework to calculate the density perturbation and gravity signal associated with the zonal flow in [Section 3](#3-gravity-calculation). Then, we calculate the gravity signal for a few example flows in [Section 4](#4-Results). A more detailed discussion of the methods and results be found in Kulowski et al. (2020) (in review). 
   
@@ -57,3 +57,13 @@ We calculate the zonal gravity harmonics (J2-J10) for our physically motivated d
 </p>
 
 These results can be produced by the files `simple_polynomial.py` and `minimal_ohmic_dissipation.py`. For all cases, the dynamo zonal flow would produce J3 values on the same order of magnitude as the Juno inferred value and J2 and J4 values on the same order as 3000 km deep atmospheric zonal flow, but would not contribute much to higher order gravity harmonics.
+
+## References 
+
+1. Guillot, T., Miguel, Y., Militzer, B., Hubbard, W. B., Kaspi, Y., Galanti, E., . . . Bolton, S. J. (2018). A suppression of differential rotation in Jupiter’s deep interior. Nature, 555, 227.
+
+2. Kaspi, Y., Galanti, E., Hubbard, W., Stevenson, D., Bolton, S., Iess, L., . . . Wahl, S. (2018). Jupiter’s atmospheric jet streams extend thousands of kilometres deep. Nature, 555(7695), 223–226. doi: 10.1038/nature25793
+
+3. Kong, D., Zhang, K., Schubert, G., & Anderson, J. D. (2018).
+Jupiter’s cloud-level zonal winds remains a puzzle even after Juno. ceedings of the National Academy of Sciences, 115(34), 8499–8504. 10.1073/pnas.1805927115
+
