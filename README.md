@@ -64,6 +64,8 @@ These results can be produced by the files `simple_polynomial.py` and `minimal_o
 
 2. Kaspi, Y., Galanti, E., Hubbard, W., Stevenson, D., Bolton, S., Iess, L., . . . Wahl, S. (2018). Jupiter’s atmospheric jet streams extend thousands of kilometres deep. Nature, 555(7695), 223–226. doi: 10.1038/nature25793
 
-3. Kong, D., Zhang, K., Schubert, G., & Anderson, J. D. (2018).
-Jupiter’s cloud-level zonal winds remains a puzzle even after Juno. ceedings of the National Academy of Sciences, 115(34), 8499–8504. 10.1073/pnas.1805927115
+4. Kulowski, L., Cao, H., and Bloxham, J. Contributions to Jupiter’s gravity field from dynamics in the dynamo region. JGR Planets (in review).
+
+5. Kong, D., Zhang, K., Schubert, G., & Anderson, J. D. (2018).
+Jupiter’s cloud-level zonal winds remains a puzzle even after Juno. Proceedings of the National Academy of Sciences, 115(34), 8499–8504. 10.1073/pnas.1805927115
 
