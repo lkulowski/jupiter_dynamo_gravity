@@ -36,7 +36,7 @@ At the dynamo surface, we assume that the zonal flow is proportional to the zona
   <img src="figures/surface_flow.jpg" width="800">
     <br>
 </p>
-We use Ferraro's law to extend the angular velocity associated with the zonal flow at the dynamo surface (red and blue curves) into the interior along the magnetic field lines. The dynamo zonal flow profiles shown for the simple polynomial and minimal Ohmic dissipation models. Each profile has a RMS velocity of 10 cm/s. 
+We use Ferraro's law to extend the angular velocity associated with the zonal flow at the dynamo surface (red and blue curves) into the interior along the magnetic field lines. The dynamo zonal flow profiles shown for the simple polynomial and minimal Ohmic dissipation models below. Each profile has a RMS velocity of 10 cm/s. 
 <p align="center">
   <img src="figures/zonal_flow_profiles.jpg" width="800">
     <br>
