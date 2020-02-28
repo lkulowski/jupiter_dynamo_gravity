@@ -67,9 +67,7 @@ We calculate the zonal gravity harmonics (J2-J10) for our physically motivated d
   <img src="figures/jns.jpg" width="900">
 </p>
 
-The gravity harmonics that the dynamo region significantly contributes to are highlighted in red. For all cases, the dynamo zonal flow would produce J3 values on the same order of magnitude as the Juno inferred value and J2 and J4 values on the same order as 3000 km deep atmospheric zonal flow, but would not contribute much to higher order gravity harmonics.
-
-
+The gravity harmonics that the dynamo region significantly contributes to are highlighted in red. For all cases, the dynamo zonal flow would produce J3 values on the same order of magnitude as the Juno inferred value and J2 and J4 values on the same order as 3000 km deep atmospheric zonal flow, but would not contribute much to higher order gravity harmonics. These results can be produced by the files `simple_polynomial.py` and `minimal_ohmic_dissipation.py`.
 
 These results show that the dynamo region makes an important contribution to Jupiter's gravity field. While atmospheric zonal flows are capable of produce gravity harmonics that are consistent with the Juno measurements, it is not necessary for these flows to fully match the measured gravity harmonics. Some of the contribution can come from the dynamo region instead of the atmosphere. On the other hand, atmospheric zonal flows must fully explain the higher order gravity harmonics, or the smaller-scale details of Jupiter's gravity field. Therefore, when explaining the structure of Jupiter's gravity field, contributions from flows in both the dynamo region and the deep atmosphere should both be taken into account.  
 
